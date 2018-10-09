@@ -1,3 +1,5 @@
 .idea/
 development/
 less/
+package-lock.json
+node_modules/
