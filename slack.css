@@ -196,7 +196,10 @@ ts-jumper input[type="text"],
 
 .p-channel_sidebar__static_list div {
    margin-right: 2px;
-   height: 24px !important;
+   /*height: 24px !important;*/
+}
+.p-message_pane__foreword__description, .p-message_pane__limited_history_alert {
+  color: #969696;	
 }
 
 .p-channel_sidebar__channel--selected,
