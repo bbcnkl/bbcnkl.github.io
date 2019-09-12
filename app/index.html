@@ -16,8 +16,8 @@
     <meta property="og:image" content="https://bbcnkl.github.io/img/logo-square.png" />
     <meta property="og:image:width" content="320" />
     <meta property="og:image:height" content="320" />
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
 
 
     <!--build:css assets/css/styles.min.css-->
@@ -38,54 +38,37 @@
 
 <body id="page-top" class="index">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">
-                    <img src="assets/img/logo.png" class="img-responsive" />
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <!--<li class="page-scroll">-->
-                        <!--<a href="#contact">Contact</a>-->
-                    <!--</li>-->
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
     <!-- Header -->
     <header>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive profile-img" src="assets/img/profile.png" alt="">
+                    <div class="profile-img">
+                        <img class="img-responsive" src="assets/img/profile.jpg" alt="">
+                    </div>
                     <div class="intro-text">
                         <span class="name">Nikola Babić</span>
-                        <hr class="star-light">
-                        <span class="skills">Full Stack Web Developer - Freelancer</span>
+                        <hr class="header-light">
+                        <span class="skills">Full Stack Web Developer</span>
+                    </div>
+
+                    <div class="header-buttons">
+                        <div class="header-button col-md-4">
+                            <a href="http://164.132.105.247/portfolio/cv-nikola-babic.pdf" class="btn btn-lg btn-outline">
+                                <i class="fa fa-file-text-o"></i> Review my CV
+                            </a>
+                        </div>
+                        <div class="header-button col-md-4">
+                            <a href="#portfolio" class="btn btn-lg btn-outline">
+                                <i class="fa fa-briefcase"></i> Portfolio
+                            </a>
+                        </div>
+                        <div class="header-button col-md-4">
+                            <a href="#about" class="btn btn-lg btn-outline">
+                                <i class="fa fa-info-circle"></i> About me
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -103,7 +86,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -114,9 +97,20 @@
                     </a>
                 </div>
 
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal16" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="assets/img/portfolio/ninthgate.png" class="img-responsive" alt="">
+                    </a>
+                </div>
 
 
-                <div class="col-sm-4 portfolio-item">
+
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -127,7 +121,7 @@
                     </a>
                 </div>
 
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal13" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -138,7 +132,7 @@
                     </a>
                 </div>
 
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -148,7 +142,7 @@
                         <img src="assets/img/portfolio/lea.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -158,7 +152,7 @@
                         <img src="assets/img/portfolio/yhlth.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -168,7 +162,7 @@
                         <img src="assets/img/portfolio/facerec.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -178,7 +172,7 @@
                         <img src="assets/img/portfolio/pekara.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -188,7 +182,7 @@
                         <img src="assets/img/portfolio/enciklo.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -198,7 +192,7 @@
                         <img src="assets/img/portfolio/sgd.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -208,7 +202,7 @@
                         <img src="assets/img/portfolio/digitalshare.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -218,7 +212,7 @@
                         <img src="assets/img/portfolio/fink.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -228,7 +222,7 @@
                         <img src="assets/img/portfolio/sckg.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -238,7 +232,7 @@
                         <img src="assets/img/portfolio/dinowa.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal14" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -248,7 +242,7 @@
                         <img src="assets/img/portfolio/counter-website.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal15" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -287,11 +281,7 @@
                     </p>
                 </div>
 
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="http://164.132.105.247/portfolio/cv-nikola-babic.pdf" class="btn btn-lg btn-outline cv-download">
-                        <i class="fa fa-download"></i> Download CV
-                    </a>
-                </div>
+
             </div>
         </div>
     </section>
@@ -391,7 +381,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; 2018
+                        Copyright &copy; 2019
                     </div>
                 </div>
             </div>
@@ -1047,6 +1037,7 @@
           </div>
       </div>
 
+    @@include('./projects/16_ninthgateneuro.html')
 
      <!--build:js assets/js/main.min.js -->
     <script src="assets/js/jquery.js"></script>

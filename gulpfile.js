@@ -5,6 +5,7 @@ var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 var gutil = require('gulp-util');
+var fileinclude = require('gulp-file-include');
 
 gulp.task('browserSync', function() {
   browserSync.init({
@@ -15,11 +16,21 @@ gulp.task('browserSync', function() {
   })
 })
 
-gulp.task('watch', ['browserSync'], function (){
+gulp.task('watch', ['browserSync', 'fileinclude'], function (){
   gulp.watch('app/**', browserSync.reload);
   // Other watchers
 })
 
+
+
+gulp.task('fileinclude', function() {
+  gulp.src(['index.html'])
+      .pipe(fileinclude({
+        prefix: '@@',
+        basepath: '@file'
+      }))
+      .pipe(gulp.dest('./'));
+});
 
 gulp.task('useref', function(){
     return gulp.src('app/index.html')

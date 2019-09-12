@@ -1,6 +1,6 @@
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    $('body').on('click', '.page-scroll a', function(event) {
+    $('body').on('click', '.header-button a', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
