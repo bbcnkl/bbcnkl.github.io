@@ -6,6 +6,7 @@ var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 var gutil = require('gulp-util');
 var fileinclude = require('gulp-file-include');
+var rename = require('gulp-rename');
 
 gulp.task('browserSync', function() {
   browserSync.init({
@@ -17,20 +18,29 @@ gulp.task('browserSync', function() {
 })
 
 gulp.task('watch', ['browserSync', 'fileinclude'], function (){
-  gulp.watch('app/**', browserSync.reload);
-  // Other watchers
+      gulp.watch('app/**/*.html', function() {
+        gulp.src(['app/index-work.html'])
+         .pipe(fileinclude({
+           prefix: '@@',
+           basepath: 'app/'
+         }))
+         .pipe(rename('index.html'))
+         .pipe(gulp.dest('app'))
+      })
+
+      gulp.watch('app/**', browserSync.reload);
 })
 
-
-
 gulp.task('fileinclude', function() {
-  gulp.src(['index.html'])
+   gulp.src(['app/index-work.html'])
       .pipe(fileinclude({
         prefix: '@@',
-        basepath: '@file'
+        basepath: 'app/'
       }))
-      .pipe(gulp.dest('./'));
+      .pipe(rename('index.html'))
+      .pipe(gulp.dest('app'));
 });
+
 
 gulp.task('useref', function(){
     return gulp.src('app/index.html')

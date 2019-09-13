@@ -66,7 +66,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #3393C5;
+    background-color: #0A4050;
 }
 
 hr.star-primary {
@@ -85,7 +85,8 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #0a4050;
+    background-color: #0A4050;
+    background: linear-gradient(90deg, rgba(34,112,135,1) 0%, rgba(10,64,80,1) 35%, rgba(17,100,125,1) 100%);
 }
 
 header .container {
@@ -103,7 +104,10 @@ header .intro-text .name {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 500;
+}
+header .intro-text .name .lastname {
+    font-weight: 600;
 }
 
 header .intro-text .skills {
@@ -274,7 +278,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background-color: #2c3e50;
+    background-color: #062c37;
 }
 
 footer .footer-col {
@@ -283,7 +287,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #233140;
+    background-color: #0a4050;
 }
 
 .btn-social {
@@ -468,4 +472,3 @@ footer .footer-below {
         text-align: left !important;
     }
 }
-
