@@ -81,6 +81,9 @@ hr.star-primary:after {
 .img-centered {
     margin: 0 auto;
 }
+.section-title {
+    font-weight: 600;
+}
 
 header {
     text-align: center;
