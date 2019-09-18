@@ -90,6 +90,10 @@ header {
     color: #fff;
     background-color: #0A4050;
     background: linear-gradient(90deg, rgba(34,112,135,1) 0%, rgba(10,64,80,1) 35%, rgba(17,100,125,1) 100%);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header .container {
