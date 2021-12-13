@@ -2,7 +2,7 @@ body {
     overflow-x: hidden;
 }
 
-p {
+p, li {
     font-size: 20px;
 }
 
