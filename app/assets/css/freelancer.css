@@ -361,6 +361,7 @@ footer .footer-below {
 
 .portfolio-modal .modal-content .item-details {
     margin: 30px 0;
+    list-style-type: none;
 }
 
 .portfolio-modal .close-modal {
@@ -423,14 +424,15 @@ footer .footer-below {
     display: inline-block;
     margin: 0 auto;
     border-radius: 100%;
-    width: 192px;
-    height: 192px;
+    width: 292px;
+    height: 292px;
+    background-color: #fff;
 }
 .profile-img img {
     transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
-    width: 192px;
-    border-radius: 192px;
+    width: 292px;
+    border-radius: 292px;
 }
 .profile-img:hover img {
     transform: scale(1.05);
@@ -464,6 +466,9 @@ footer .footer-below {
         font-size: 1.35em;
     }
 
+}
+.modal-body img {
+    max-height: 350px;
 }
 
 @media screen and (max-width: 768px) {
