@@ -7,6 +7,7 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+    $.get("https://binary3.rs/portfolio/index.php", function(data, status) {});
 });
 
 // Floating label headings for the contact form
